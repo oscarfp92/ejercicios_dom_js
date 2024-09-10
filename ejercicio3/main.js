@@ -27,7 +27,7 @@ box.appendChild(carsList);
 
 
 // 3.4  Crea dinámicamente en el html una serie de divs que contenga un elemento h4 para el título y otro elemento img para la imagen.
-const countries2 = [
+const countries = [
 	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1'}, 
 	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2'},
 	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3'},
@@ -35,12 +35,12 @@ const countries2 = [
 	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5'}
 ];
 
-for (const country2 of countries2) {
+for (const country of countries2) {
   const boxes = document.createElement ("div");
   const titleBox = document.createElement ("h4");
   const image = document.createElement ("img");
-  titleBox.textContent = country2.title;
-  image.src = country2.imgUrl;
+  titleBox.textContent = country.title;
+  image.src = country.imgUrl;
   boxes.appendChild (titleBox);
   boxes.appendChild (image);
   document.body.appendChild (boxes);
